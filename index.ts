@@ -1,3 +1,3 @@
 Deno.serve(req => {
-	return new Response("hello")
+	return new Response(req.headers.get("Accept-Language"))
 })
